@@ -1,0 +1,70 @@
+:root {
+  --paper: #f3efe6;
+  --ink: #17181a;
+  --muted: #6b675e;
+  --rule: #cfc8b8;
+  --accent: #d6451b;
+  --card: #fbf9f3;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Instrument Sans", "Helvetica Neue", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #141412; --ink: #efeadd; --muted: #9a9486; --rule: #34322c; --accent: #ff6a3d; --card: #1b1b18; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--body); font-size: 17px; line-height: 1.6;
+  background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--ink) 9%, transparent) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+a:hover { color: var(--accent); }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+.top {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  padding: 22px 0; border-bottom: 1px solid var(--rule);
+  font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase;
+}
+.top a { text-decoration: none; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); margin-right: 10px; }
+.label { font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1, h2 { font-family: var(--display); font-weight: 500; letter-spacing: -.02em; margin: 0; line-height: 1.15; }
+.hero { padding: 84px 0 72px; }
+.hero h1 { font-size: clamp(3rem, 11vw, 8.2rem); line-height: .92; margin-top: 18px; }
+.hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
+.hero p { max-width: 34em; font-size: 1.15rem; margin: 30px 0 0; color: var(--muted); }
+.section { border-top: 1px solid var(--rule); padding: 40px 0 56px; display: grid; grid-template-columns: 200px 1fr; gap: 24px; }
+.apps { list-style: none; margin: 0; padding: 0; }
+.apps li { border-bottom: 1px solid var(--rule); }
+.apps li:first-child { border-top: 1px solid var(--rule); }
+.apps a {
+  display: grid; grid-template-columns: 3.2em 1fr auto; align-items: baseline; gap: 12px;
+  padding: 20px 6px; text-decoration: none; transition: background .2s, padding .2s;
+}
+.apps a:hover { background: var(--card); padding-left: 16px; color: var(--ink); }
+.apps .n { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.apps .t { font-family: var(--display); font-size: clamp(1.5rem, 4vw, 2.2rem); line-height: 1.1; }
+.apps .d { display: block; font-family: var(--body); font-size: .95rem; color: var(--muted); margin-top: 4px; }
+.apps .go { font-family: var(--mono); font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); white-space: nowrap; }
+.mail { font-family: var(--display); font-size: clamp(1.4rem, 4.6vw, 2.6rem); word-break: break-word; }
+.foot { border-top: 1px solid var(--rule); padding: 22px 0 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+/* document pages */
+.doc { padding: 64px 0 72px; max-width: 720px; }
+.doc h1 { font-size: clamp(2.4rem, 7vw, 4.4rem); line-height: 1; margin: 16px 0 18px; }
+.doc h2 { font-size: 1.55rem; margin: 44px 0 10px; padding-top: 22px; border-top: 1px solid var(--rule); }
+.doc ul { padding-left: 1.1em; }
+.doc li { margin: 8px 0; }
+.doc li::marker { color: var(--accent); }
+.rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+.rise.d1 { animation-delay: .08s; } .rise.d2 { animation-delay: .18s; } .rise.d3 { animation-delay: .28s; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .rise { animation: none; } }
+@media (max-width: 700px) {
+  .section { grid-template-columns: 1fr; gap: 14px; padding: 30px 0 40px; }
+  .hero { padding: 52px 0 48px; }
+  .apps a { grid-template-columns: 2.4em 1fr; }
+  .apps .go { grid-column: 2; }
+}
