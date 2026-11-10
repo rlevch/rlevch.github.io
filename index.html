@@ -7,160 +7,154 @@
 <meta name="description" content="Intellitech Studio designs and builds web, mobile and desktop applications, from the first sketch to release and support.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:ital,wght@0,300;0,500;0,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
+<div class="page">
 
-<section class="hero">
-  <div class="wrap">
+  <section class="hero">
+    <div class="waves"><img src="assets/hero-waves.svg" alt=""></div>
     <header class="nav">
-      <a class="logo" href="./"><b>Intelli</b>tech <span>Studio</span></a>
+      <a class="logo" href="./"><b>Intelli</b>tech<small>Studio</small></a>
       <nav class="links">
         <a href="#services">Services</a>
+        <a href="#how">How we work</a>
         <a href="#apps">Apps</a>
         <a href="#documents">Documents</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn plain" href="mailto:intellitechstudio@gmail.com">Contact</a>
+      <a class="btn small" href="mailto:intellitechstudio@gmail.com">Contact</a>
     </header>
+    <span class="ring float" style="left:calc(150 * var(--u));top:calc(354 * var(--u));width:calc(110 * var(--u));height:calc(72 * var(--u))" aria-hidden="true"></span>
+    <span class="ball float" style="left:calc(1732 * var(--u));top:calc(200 * var(--u));width:calc(40 * var(--u));height:calc(40 * var(--u));animation-delay:-3s" aria-hidden="true"></span>
+    <h1>Your <span class="o" role="img" aria-label="O"></span>ne<br><span class="it">App</span> <span class="gr">Studio</span></h1>
+    <p class="side">Web, mobile and desktop apps, designed and built by Intellitech Studio.</p>
+    <a class="btn wide cta-btn" href="#services">Explore now <img src="assets/arrow-line.svg" alt=""></a>
+  </section>
 
-    <div class="inner">
-      <span class="ring float" style="left:0;top:-6px" aria-hidden="true"></span>
-      <span class="ball float" style="right:24%;top:250px;width:18px;height:18px;animation-delay:-3s" aria-hidden="true"></span>
-      <h1 class="rise">Your <span class="o" aria-hidden="true"></span><span style="position:absolute;left:-9999px">o</span>ne
-        <span class="l2"><em>App</em> <span class="cy">Studio</span></span></h1>
-      <div class="side rise d1">
-        Web, mobile and desktop apps, designed and built by Intellitech Studio.
-        <br><a class="btn" href="#apps">Our apps</a>
-      </div>
-
-      <div class="belief rise d2">
-        <h2>We turn <em>ideas</em> into<br>software people <span class="cy">LOVE.</span></h2>
-        <div class="note">
-          <p>Intellitech Studio is a software development studio. We take a product from the first sketch to release: design, code, launch and support, for the web, for phones and for the desktop.</p>
-          <a class="btn" href="mailto:intellitechstudio@gmail.com">Write to us</a>
-        </div>
-      </div>
+  <section class="about">
+    <h2>We turn <span class="it">ideas</span> into<br>software people <span class="gr">LOVE.</span></h2>
+    <div class="row">
+      <p>Intellitech Studio is a software development studio. We take a product from the first sketch to release: design, code, launch and support, for the web, for phones and for the desktop.</p>
+      <a class="btn wide tall" href="mailto:intellitechstudio@gmail.com">Write to us <img src="assets/arrow-line.svg" alt=""></a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="services" id="services">
-  <div class="wrap">
-    <h2>Services</h2>
-    <div class="grid">
-      <div class="svc">
-        <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="17"/><ellipse cx="22" cy="22" rx="7.5" ry="17"/><path d="M5 22h34M8 13h28M8 31h28"/></svg>
+  <section class="services" id="services">
+    <h2 class="h3">Services</h2>
+    <div class="cards">
+      <a class="card" href="mailto:intellitechstudio@gmail.com?subject=Web%20Development">
+        <div class="ico"><img src="assets/icon-web.svg" alt="" style="width:calc(96 * var(--u));height:calc(96 * var(--u))"></div>
         <h3>Web<br>Development</h3>
         <p>Websites, web apps and online services that are fast, clear and work on any screen.</p>
-      </div>
-      <div class="svc on">
-        <svg viewBox="0 0 44 44"><rect x="13" y="4" width="18" height="36" rx="3.5"/><path d="M19 8h6M20 36h4"/></svg>
+        <img class="arr" src="assets/arrow.svg" alt=""><img class="arr circle" src="assets/arrow-circle.svg" alt="">
+      </a>
+      <a class="card" href="mailto:intellitechstudio@gmail.com?subject=Mobile%20Development">
+        <div class="ico"><img src="assets/icon-mobile.svg" alt="" style="width:calc(60 * var(--u));height:calc(100 * var(--u))"></div>
         <h3>Mobile<br>Development</h3>
         <p>Apps for Android and iOS, from the first screen to release in the app stores.</p>
-      </div>
-      <div class="svc">
-        <svg viewBox="0 0 44 44"><rect x="4" y="7" width="36" height="24" rx="3"/><path d="M15 38h14M22 31v7M17 16l-4 3.5 4 3.5M27 16l4 3.5-4 3.5M23.5 14l-3 11"/></svg>
+        <img class="arr" src="assets/arrow.svg" alt=""><img class="arr circle" src="assets/arrow-circle.svg" alt="">
+      </a>
+      <a class="card" href="mailto:intellitechstudio@gmail.com?subject=Desktop%20Software">
+        <div class="ico"><span class="code-ico"><img src="assets/icon-code-1.svg" alt="" style="inset:5.54% 0;height:88.92%"><img src="assets/icon-code-2.svg" alt="" style="left:19.54%;top:26.18%;width:17.34%;height:21.53%"><img src="assets/icon-code-3.svg" alt="" style="left:63.12%;top:26.18%;width:17.34%;height:21.53%"><img src="assets/icon-code-4.svg" alt="" style="left:41.19%;top:23.55%;width:17.62%;height:26.79%"></span></div>
         <h3>Desktop<br>Software</h3>
         <p>Applications for Windows, macOS and Linux, built around the way your team works.</p>
-      </div>
-      <div class="svc">
-        <svg viewBox="0 0 44 44"><path d="M13 32a8 8 0 0 1-1-15.9A11 11 0 0 1 33 15a8.5 8.5 0 0 1-1 17Z"/><path d="M22 20v9M18 25l4 4 4-4"/></svg>
+        <img class="arr" src="assets/arrow.svg" alt=""><img class="arr circle" src="assets/arrow-circle.svg" alt="">
+      </a>
+      <a class="card on" href="mailto:intellitechstudio@gmail.com?subject=Backend%20and%20Cloud">
+        <div class="ico"><img src="assets/icon-cloud.svg" alt="" style="width:calc(110 * var(--u));height:calc(64.45 * var(--u))"></div>
         <h3>Backend<br>&amp; Cloud</h3>
         <p>Servers, databases and integrations that keep your product running and your data safe.</p>
-      </div>
-      <div class="svc">
-        <svg viewBox="0 0 44 44"><rect x="5" y="6" width="34" height="32" rx="3"/><path d="M5 14h34M12 22h10M12 28h20M28 20v4"/><circle cx="10" cy="10" r=".8"/><circle cx="14" cy="10" r=".8"/></svg>
-        <h3>UI / UX<br>Design</h3>
-        <p>Interfaces people understand at first glance: user flows, prototypes and visual design.</p>
-      </div>
-      <div class="svc">
-        <svg viewBox="0 0 44 44"><path d="M22 4c8 5 11 12 9 22l-5 4h-8l-5-4C11 16 14 9 22 4Z"/><circle cx="22" cy="17" r="3.5"/><path d="M17 33l-3 7 8-3 8 3-3-7"/></svg>
-        <h3>Launch<br>&amp; Support</h3>
-        <p>Publishing, updates and improvements long after the first release.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="lightband">
-  <div class="wrap">
-    <section class="apps" id="apps">
-      <span class="ball float" style="left:44%;top:70px;width:26px;height:26px" aria-hidden="true"></span>
-      <span class="ball float" style="right:6%;bottom:80px;width:14px;height:14px;animation-delay:-2s" aria-hidden="true"></span>
-      <div class="stack">
-        <a class="app" href="https://play.google.com/store/apps/details?id=com.intellitechsolutions.michat">
-          <span>Mi Chat<small>Community posts with photos and comments</small></span><span class="go">Google Play &rarr;</span></a>
-        <a class="app" href="https://play.google.com/store/apps/details?id=com.rlevch.great_places">
-          <span>Great Places</span><span class="go">Google Play &rarr;</span></a>
-        <a class="app" href="https://play.google.com/store/apps/details?id=com.intellitechsolutions.gamingclubreservation">
-          <span>Cyber Lounge</span><span class="go">Google Play &rarr;</span></a>
-      </div>
-      <div class="head">
-        <h2>Our apps</h2>
-        <p>Some of the apps built by the studio. They are published on Google Play under the developer name Roman Levchenkov.</p>
-        <a class="btn dark" href="mailto:intellitechstudio@gmail.com">Start a project</a>
-      </div>
-    </section>
-  </div>
-</div>
-
-<section class="why">
-  <div class="wrap">
-    <h2>How we work</h2>
-    <div class="cols">
-      <div>
-        <svg viewBox="0 0 70 70"><ellipse cx="35" cy="35" rx="30" ry="22"/><ellipse cx="35" cy="35" rx="20" ry="22"/><ellipse cx="35" cy="35" rx="9" ry="22"/><path d="M5 35h60M9 24h52M9 46h52M35 13v44"/></svg>
-        <h3>discovery</h3><p>We start with your goals and users, and agree on screens and flows before any code is written.</p>
-      </div>
-      <div>
-        <svg viewBox="0 0 70 70"><path d="M20 8h30M20 62h30M20 8c0 16 30 38 30 54M50 8c0 16-30 38-30 54M26 8c0 16 18 38 18 54M44 8c0 16-18 38-18 54M35 8v54M22 20h26M27 35h16M22 50h26"/></svg>
-        <h3>development</h3><p>The product grows in short steps, and you see a working build after each one.</p>
-      </div>
-      <div>
-        <svg viewBox="0 0 70 70"><path d="M6 22l18-8 11 8 11-8 18 8v34l-18-8-11 8-11-8-18 8ZM24 14v34M35 22v34M46 14v34M6 33l18-8 11 8 11-8 18 8M6 44l18-8 11 8 11-8 18 8"/></svg>
-        <h3>launch</h3><p>We test, prepare everything for release and put the product in front of your users.</p>
-      </div>
-      <div>
-        <svg viewBox="0 0 70 70"><path d="M35 8l22 10v20c0 12-9 20-22 24-13-4-22-12-22-24V18ZM35 8v54M13 28h44M15 44h40M24 13v44M46 13v44"/></svg>
-        <h3>support</h3><p>After release we stay with you: updates, new features and help when something goes wrong.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="lightband">
-  <div class="wrap">
-    <section class="docs" id="documents">
-      <div class="head"><h2>Documents</h2></div>
-      <a class="docrow" href="michat/child-safety.html">
-        <div><b>Mi Chat - Child Safety Standards</b><span>Policy on child safety and how to report a problem</span></div><i>&rarr;</i>
+        <img class="arr" src="assets/arrow.svg" alt=""><img class="arr circle" src="assets/arrow-circle.svg" alt="">
       </a>
+      <a class="card" href="mailto:intellitechstudio@gmail.com?subject=Launch%20and%20Support">
+        <div class="ico"><img src="assets/icon-rocket.svg" alt="" style="width:calc(100 * var(--u));height:calc(100 * var(--u))"></div>
+        <h3>Launch<br>&amp; Support</h3>
+        <p>Design, testing, release and updates: we stay with the product long after day one.</p>
+        <img class="arr" src="assets/arrow.svg" alt=""><img class="arr circle" src="assets/arrow-circle.svg" alt="">
+      </a>
+    </div>
+  </section>
 
-      <div class="cta" id="contact">
-        <h2>Ready to build your <em>next app</em> with us?</h2>
-        <a class="btn solid" href="mailto:intellitechstudio@gmail.com">intellitechstudio@gmail.com</a>
-      </div>
-    </section>
+  <section class="why" id="how">
+    <h2 class="h3">How<br>we work</h2>
+    <span class="ball float" style="left:calc(243 * var(--u));top:calc(540 * var(--u));width:calc(66 * var(--u));height:calc(66 * var(--u))" aria-hidden="true"></span>
+    <span class="ring float" style="left:calc(150 * var(--u));top:calc(640 * var(--u));width:calc(176 * var(--u));height:calc(116 * var(--u));animation-delay:-2s" aria-hidden="true"></span>
+    <div class="items">
+      <div><h3>Discovery</h3><p>We start with your goals and your users, and agree on screens and flows before any code is written.</p></div>
+      <div><h3>Build</h3><p>The product grows in short steps, and you see a working build after each one.</p></div>
+      <div><h3>Launch</h3><p>We test, prepare everything for release and put the product in front of your users.</p></div>
+      <div><h3>Support</h3><p>After release we stay with you: updates, new features and help when something goes wrong.</p></div>
+    </div>
+  </section>
 
-    <footer>
-      <div class="foot">
-        <div><a class="logo" href="./"><b>Intelli</b>tech <span>Studio</span></a></div>
-        <div>
-          <h4>Explore</h4>
-          <a href="#services">Services</a><a href="#apps">Apps</a><a href="#documents">Documents</a>
-        </div>
-        <div>
-          <h4>Contact us</h4>
-          <a href="mailto:intellitechstudio@gmail.com">intellitechstudio@gmail.com</a>
-          <p>Developer on Google Play: Roman Levchenkov</p>
-        </div>
+  <section class="light apps" id="apps">
+    <div class="col">
+      <h2 class="h3">Our Apps</h2>
+      <a class="app tall" href="https://play.google.com/store/apps/details?id=com.rlevch.great_places">
+        <img class="deco" src="assets/footer-waves.svg" alt="">
+        <p class="yr">2 0 2 6</p>
+        <h3 class="h5">Great Places</h3>
+        <img class="go" src="assets/arrow-dark.svg" alt="">
+      </a>
+    </div>
+    <div class="col">
+      <a class="app on" href="https://play.google.com/store/apps/details?id=com.intellitechsolutions.michat">
+        <span class="waves2"></span>
+        <p class="yr">G O O G L E &nbsp; P L A Y</p>
+        <h3 class="h3">Mi Chat</h3>
+        <p class="d">A community app for sharing posts with photos and talking about them in the comments.</p>
+        <span class="pill">Open in Google Play</span>
+      </a>
+      <a class="app low" href="https://play.google.com/store/apps/details?id=com.intellitechsolutions.gamingclubreservation">
+        <p class="yr">2 0 2 4</p>
+        <h3 class="h5">Cyber Lounge</h3>
+        <img class="go" src="assets/arrow-dark.svg" alt="">
+      </a>
+    </div>
+  </section>
+
+  <section class="docs" id="documents">
+    <div>
+      <h2 class="h3">Documents</h2>
+      <div class="list">
+        <a href="michat/child-safety.html"><span>Mi Chat - Child Safety Standards</span><i>01</i></a>
+        <p>Policies and public documents for the apps we publish.</p>
       </div>
-      <div class="copy"><span>&copy; 2026 Intellitech Studio</span><span>rlevch.github.io</span></div>
-    </footer>
-  </div>
+    </div>
+    <div class="ask" id="contact">
+      <h3 class="h5">Any questions<br>for us?</h3>
+      <p>Leave us a message.</p>
+      <a class="mail" href="mailto:intellitechstudio@gmail.com">intellitechstudio@gmail.com</a>
+      <a class="send" href="mailto:intellitechstudio@gmail.com">Send A Message</a>
+    </div>
+  </section>
+
+  <section class="cta">
+    <span class="ball float" style="left:calc(929 * var(--u));top:calc(200 * var(--u));width:calc(34 * var(--u));height:calc(34 * var(--u))" aria-hidden="true"></span>
+    <span class="ball float" style="left:calc(1723 * var(--u));top:calc(484 * var(--u));width:calc(47 * var(--u));height:calc(47 * var(--u));animation-delay:-4s" aria-hidden="true"></span>
+    <h2>Ready f<span class="o" role="img" aria-label="o"></span>r the<br><span class="it">next</span> <span class="gr">App?</span></h2>
+    <a class="btn" href="mailto:intellitechstudio@gmail.com">Write to us <img src="assets/arrow-line.svg" alt=""></a>
+  </section>
+
+  <footer class="light footer">
+    <img class="fw" src="assets/footer-waves.svg" alt="">
+    <div><a class="logo" href="./"><b>Intelli</b>tech<small>Studio</small></a></div>
+    <div class="col">
+      <h3>Explore</h3>
+      <a href="#services">Services</a>
+      <a href="#how">How we work</a>
+      <a href="#apps">Apps</a>
+      <a href="#documents">Documents</a>
+    </div>
+    <div class="col">
+      <h3>Contact Us</h3>
+      <a class="mailto" href="mailto:intellitechstudio@gmail.com">intellitechstudio@gmail.com</a>
+      <span>Developer name on Google Play: Roman Levchenkov</span>
+    </div>
+    <div class="copy"><span>&copy; 2026 Intellitech Studio</span><span>rlevch.github.io</span></div>
+  </footer>
 </div>
-
 </body>
 </html>
