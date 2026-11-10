@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Intellitech Studio</title>
+<meta name="description" content="Write to Intellitech Studio about your web, mobile or desktop app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/site.css?v=6fcd1b85">
+</head>
+<body>
+<div class="page">
+  <section class="pagehead">
+    <div class="waves"><img src="assets/hero-waves.svg" alt=""></div>
+    <header class="nav">
+      <a class="logo" href="./"><b>Intelli</b>tech<small>Studio</small></a>
+      <nav class="links">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="apps.html">Apps</a>
+        <a class="on" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn small" href="contact.html">Write to us</a>
+    </header>
+    <span class="ball float" style="left:calc(1424 * var(--u));top:calc(174 * var(--u));width:calc(33 * var(--u));height:calc(33 * var(--u))" aria-hidden="true"></span>
+    <span class="ring float" style="left:calc(1679 * var(--u));top:calc(341 * var(--u));width:calc(91 * var(--u));height:calc(60 * var(--u));animation-delay:-3s" aria-hidden="true"></span>
+    <div class="title">
+      <div class="crumbs"><a href="./">Home</a> &nbsp;&rsaquo;&nbsp; <b>Contact</b></div>
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+  <section class="touch">
+    <h2 class="h5">Let&rsquo;s get in touch!</h2>
+    <a class="info" href="https://play.google.com/store/apps/details?id=com.intellitechsolutions.michat"><small>Google Play</small><b>Roman Levchenkov</b></a>
+    <a class="info" href="mailto:intellitechstudio@gmail.com"><small>Email</small><b>intellitechstudio@gmail.com</b></a>
+  </section>
+
+  <section class="formrow">
+    <div class="note">
+      <span class="wv"></span>
+      <a class="logo" href="./"><b>Intelli</b>tech<small>Studio</small></a>
+      <p>Tell us what you want to build, who it is for and when you need it. We read every message and answer by email.</p>
+    </div>
+    <form class="form" id="f">
+      <h2>Send Us Message</h2>
+      <p>Have any questions about our services? Send us your message.</p>
+      <div class="fl">
+        <label>Name<input name="name" placeholder="Enter Your Name ..." required></label>
+        <label>Email<input name="email" type="email" placeholder="Enter Your Email Address ..." required></label>
+      </div>
+      <label class="msg">Message<textarea name="message" placeholder="Enter Your Message ..." required></textarea></label>
+      <div class="act">
+        <span>The button opens your mail app with the message ready to send. Nothing is stored on this site.</span>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+  <script>
+  document.getElementById('f').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var d = new FormData(this);
+    var body = d.get('message') + '\n\n' + d.get('name') + '\n' + d.get('email');
+    location.href = 'mailto:intellitechstudio@gmail.com?subject=' + encodeURIComponent('Message from ' + d.get('name')) + '&body=' + encodeURIComponent(body);
+  });
+  </script>
+  <section class="cta2">
+    <div class="waves"><img src="assets/hero-waves.svg" alt=""></div>
+    <h2>Need an app?<br>Let&rsquo;s <span class="it">start now.</span></h2>
+    <a class="btn" href="contact.html">Write to us <img src="assets/arrow-line.svg" alt=""></a>
+  </section>
+<footer class="footer dark">
+    <img class="fw" src="assets/footer-waves.svg" alt="">
+    <div><a class="logo" href="./"><b>Intelli</b>tech<small>Studio</small></a></div>
+    <div class="col">
+      <h3>Explore</h3>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="apps.html">Apps</a>
+      <a href="contact.html">Contact</a>
+      <a href="michat/child-safety.html">Mi Chat policy</a>
+    </div>
+    <div class="col">
+      <h3>Contact Us</h3>
+      <a class="mailto" href="mailto:intellitechstudio@gmail.com">intellitechstudio@gmail.com</a>
+      <span>Developer name on Google Play: Roman Levchenkov</span>
+    </div>
+    <div class="copy"><span>&copy; 2026 Intellitech Studio</span><span>rlevch.github.io</span></div>
+  </footer>
+</div>
+</body>
+</html>
